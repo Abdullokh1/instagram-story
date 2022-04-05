@@ -8,6 +8,7 @@
 
 body {
   background-color: #121212 !important;
+  overflow: hidden;
   min-height: 100vh;
 }
 button{
@@ -30,9 +31,6 @@ button{
   border-radius: 10px;
   cursor: pointer;
 }
-.slider-card{
-  position: relative;
-}
 .left-button{
   position: absolute;
   left: -50px;
@@ -47,6 +45,10 @@ button{
 .slider-icon{
   font-size: 30px;
   color: #fff ;
+}
+#mainList{
+  position: absolute;
+  left: 40%;
 }
 .slider-inner{
   position: absolute;
@@ -92,3 +94,6 @@ button{
 .avatar-wrapper{
   height: 100%;
 }
+/* .hide{
+  opacity: 0;
+} */
