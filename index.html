@@ -22,16 +22,20 @@
     
     <ul class="d-flex justify-content-center align-items-center" id="mainList">
 
-       <li class="d-flex slider-card active  justify-content-center align-items-center me-5"> 
+       <li class="d-flex slider-card active main-active  justify-content-center align-items-center me-5"> 
 
-        <div class="left-button">
-          <button><i class='bx slider-icon me-3  bxs-chevron-left-circle'></i></button>
-        </div>
-        <div class="right-button">
-          <button><i class='bx slider-icon ms-3   bxs-chevron-right-circle' ></i></button>
+        <div class="arrow-buttons">
+          <div class="left-button">
+            <button><i class='bx slider-icon me-3  bxs-chevron-left-circle'></i></button>
+          </div>
+          <div class="right-button">
+            <button><i class='bx slider-icon ms-3   bxs-chevron-right-circle' ></i></button>
+          </div>
         </div>
 
-         <img src="https://picsum.photos/id/235/389/657"  style="border-radius: 10px;" alt="slide-img">
+        <div class="item-inner">
+
+         <img class="card-img" src="https://picsum.photos/id/235/389/657"  style="border-radius: 10px;" alt="slide-img">
          <div class="slider-input d-flex justify-content-center align-items-center">
            <input class="search-input" type="text" name="search" placeholder="Reply to">
            <i class='bx ms-3 voice-icons bxl-telegram' ></i>
@@ -61,6 +65,7 @@
              </div>
            </div>
          </div>
+        </div>
       </li>  
 
     </ul>
