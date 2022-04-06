@@ -1,32 +1,33 @@
 let media = [
   {
-    name: 'Iqtiboslar',
-    img:  ['https://picsum.photos/id/125/389/657'],
+    name: 'abdullokh__giyasov',
+    date: '10d',
+    img:  ['https://picsum.photos/id/2/389/657'],
     id: 1
   },
   {
-    name: 'Fikrlar',
-    img:  ['https://picsum.photos/id/452/389/657'],
+    name: 'nike__e',
+    date: '30d',
+    img:  ['https://picsum.photos/id/52/389/657'],
     id: 2
   },
   {
-    name: 'Dokonlarimiz',
-    img:  ['https://picsum.photos/id/25/389/657'],
+    name: 'abdullokh__giyasov',
+    date: '3d',
+    img:  ['https://picsum.photos/id/235/389/657'],
     id: 3
   },
   {
-    name: 'Blog',
-    img:  ['https://picsum.photos/id/635/389/657'],
+    name: 'somebody_)',
+    date: '20d',
+    img:  ['https://picsum.photos/id/66/389/657'],
     id: 4
   },
   {
     name: 'Location',
+    date: '1d',
     img:  ['https://picsum.photos/id/45/389/657'],
     id: 5
   },
-  {
-    name: 'Iqtiboslar',
-    img:  ['https://picsum.photos/id/115/389/657'],
-    id: 6
-  },
+  
 ]

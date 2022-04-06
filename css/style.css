@@ -15,21 +15,44 @@ button{
   border: none;
   background-color: transparent;
 }
-
-.active{
-  width: 389px;
-  background-color: #ccc;
-  height: 657px;
+#mainList{
   position: relative;
-  top: -25px;
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  left: 35%;
+  transition: all 0.4s ease;
 }
-.slider-wrapper{
-  width: 150px;
-  height: 270px;
+.card-item{
+  width: 157px;
   background-color: #ccc;
+  height: 277px;
+  position: relative;
   border-radius: 10px;
   cursor: pointer;
+  top: -55px;
+  display: flex;
+  transition: all 0.6s ease;
+}
+.card-img{
+  width: 157px !important;
+  height: 100%;
+}
+.item-hide{
+  display: none;
+}
+.arrow-buttons{
+  display: none;
+}
+.card-item:not(:last-child){
+  margin-right: 100px;
+}
+.active{
+  height: 657px;
+  width: 389px;
+}
+.active img{
+  width: 489px !important;
 }
 .left-button{
   position: absolute;
@@ -46,27 +69,44 @@ button{
   font-size: 30px;
   color: #fff ;
 }
-#mainList{
-  position: absolute;
-  left: 40%;
-}
+
 .slider-inner{
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+}
+.slider-line-wrap{
+  width: 100%;
+  height: 2.5px;
+  background-color: #ccc;
+  position: relative;
 }
 .slider-line{
-  width: 35px;
+  width: 0;
   height: 2.5px;
   border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #fff;
   display: inline-block;
+  animation: line 10s linear infinite;
 }
-.slide-list{
-  list-style: none;
+@keyframes line{
+  0%{
+   width: 0;
+  }
+  100%{
+    width: 100%;
+    background-color: #fff;
+  }
 }
 .slider-avatar{
   border-radius: 50%;
+}
+.voice-wrapper{
+  width: 20px !important;
 }
 .voice-icons{
   font-size: 25px;
@@ -75,7 +115,8 @@ button{
 .slider-input{
   position: absolute;
   bottom: 15px;
-  width: 376px;
+  left: 0;
+  width: 100%;
 }
 .search-input{
   width: 80%;
@@ -93,4 +134,13 @@ button{
 }
 .avatar-wrapper{
   height: 100%;
+}
+.list-wrapper{
+  overflow: hidden;
+  padding: 50px 0;
+  width: 86vw;
+  height: 95vh;
+  position: absolute;
+  left: 10%;
+  top: 10px;
 }
